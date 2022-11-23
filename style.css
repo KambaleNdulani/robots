@@ -1,0 +1,106 @@
+* {}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+/* starting of the header */
+
+.head {
+    background-color: brown;
+    width: 100px;
+    height: 60px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.eyes {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+
+
+
+
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+/* ending of header */
+
+/* starting of Main part */
+
+.bd {
+
+    width: 100px;
+    height: 150px;
+    margin-top: 5px;
+    background-color: brown;
+    border-radius: 0 0 30px 30px;
+    margin: 5px 5px 0 5px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.arms {
+    width: 30px;
+    background-color: brown;
+    height: 80px;
+    border-radius: 15px;
+}
+
+/* FOOT */
+.foot-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.foot-content .arms {
+    margin-top: -30px;
+}
+
+.right:hover {
+    transform: rotate(-30deg);
+}
+
+.left:hover {
+    transform: rotate(30deg);
+}
